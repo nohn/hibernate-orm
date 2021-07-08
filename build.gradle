@@ -16,6 +16,7 @@ buildscript {
 		classpath 'gradle.plugin.com.github.lburgazzoli:gradle-karaf-plugin:0.5.1'
 		classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.7'
 		classpath 'de.thetaphi:forbiddenapis:3.0.1'
+		classpath 'org.owasp:dependency-check-gradle:6.2.2'
 	}
 }
 
@@ -26,6 +27,7 @@ plugins {
 	id 'org.hibernate.build.xjc' version '2.0.1' apply false
 	id 'org.hibernate.build.maven-repo-auth' version '3.0.3' apply false
 	id 'biz.aQute.bnd' version '5.1.1' apply false
+	id 'org.owasp.dependencycheck' version '6.2.2' apply true
 }
 
 ext {
